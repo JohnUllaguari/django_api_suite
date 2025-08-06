@@ -30,10 +30,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "homepage",
     "rest_framework",
-    "demo_rest_api",
+    "demo_rest_api.apps.DemoRestApiConfig",
     "firebase_admin",
-    'landing_api',
+    "landing_api.apps.LandingApiConfig",
 ]
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
