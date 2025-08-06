@@ -34,7 +34,6 @@ class DemoRestApi(APIView):
             status=status.HTTP_201_CREATED
         )
 
-
 class DemoRestApiItem(APIView):
     """
     GET    -> detalle de un elemento
@@ -77,3 +76,5 @@ class DemoRestApiItem(APIView):
                 item['is_active'] = False
                 return Response({'message': 'Desactivado.', 'data': item})
         return Response({'error': 'No encontrado.'}, status=status.HTTP_404_NOT_FOUND)
+      
+      
